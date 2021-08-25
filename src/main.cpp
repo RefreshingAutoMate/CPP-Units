@@ -23,7 +23,7 @@ int main(){
 
 
 	auto a = cppunits::Kilogram(1000_g);
-	std::cout << a ;
-
-	test_square_meter_input(v1*v2); //function call does only compile if input is in square meters
+	std::cout << cppunits::Gram(a);
+	
+//	test_square_meter_input(v1*v1); //function call does only compile if input is in square meters
 }

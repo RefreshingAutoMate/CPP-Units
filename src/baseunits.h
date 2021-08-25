@@ -12,7 +12,10 @@ namespace cppunits{
 		UnitPrefix() =delete;
 		static double in_base_unit(double v){ 
 			return v*std::pow(10, N);
-		}	
+		}
+		static double from_base(double v){ 
+			return v/std::pow(10, N);
+		}				
 	};
 	
     using Yotta=UnitPrefix<24>; 
@@ -41,7 +44,12 @@ namespace cppunits{
 	class AggregateUnits{
 		public:
 		double val;
-
+		
+		template<class G>
+		AggregateUnits(AggregateUnits<G,N1,N2,N3,N4,N5,N6,N7> other_unit){
+			double temp=G::in_base_unit(other_unit.val);
+			val=T::from_base(temp);
+		}
 		AggregateUnits(double _val): val(_val){
 		}	
 	};
@@ -52,7 +60,9 @@ namespace cppunits{
 		double val;
 
 		AggregateUnits(double _val): val(_val){
-		}	
+		}
+		
+	
 		operator double(){
 			return T::in_base_unit(val);
 		}		
