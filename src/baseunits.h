@@ -112,8 +112,8 @@ namespace cppunits{
 	//This allows the unit classes to be printed out via std::cout
 	template<typename T, int N1, int N2, int N3, int N4, int N5, int N6, int N7>
 	std::ostream& operator<<(std::ostream& os, AggregateUnits<T, N1, N2, N3, N4, N5, N6, N7> a){
-		//os<<T::in_base_unit(a.val);
-		os<<a.val;
+		os<<T::in_base_unit(a.val);
+		//os<<a.val;
 		stream_units<6>(os,0,N1,N2,N3,N4,N5,N6,N7);
 		return os;
 	}
