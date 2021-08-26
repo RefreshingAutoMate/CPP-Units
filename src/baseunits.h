@@ -76,7 +76,6 @@ namespace cppunits{
 
 	// t
 
-
 	template<typename T1, typename T2, int N1, int N2, int N3, int N4, int N5, int N6, int N7>
 	AggregateUnits<Base, N1, N2, N3, N4, N5, N6, N7> operator-(AggregateUnits<T1, N1, N2, N3, N4, N5, N6, N7> lhs, AggregateUnits<T2, N1, N2, N3, N4, N5, N6, N7> rhs){
 		return AggregateUnits<Base, N1, N2, N3, N4, N5, N6, N7>(T1::in_base_unit(lhs.val)-T2::in_base_unit(rhs.val));
@@ -91,6 +90,17 @@ namespace cppunits{
 	AggregateUnits<Base, AN1-BN1, AN2-BN2, AN3-BN3, AN4-BN4, AN5-BN5, AN6-BN6, AN7-BN7> operator/(AggregateUnits<T1, AN1, AN2, AN3, AN4, AN5, AN6, AN7> lhs, AggregateUnits<T2, BN1, BN2, BN3, BN4, BN5, BN6, BN7> rhs){
 		return AggregateUnits<Base, AN1-BN1, AN2-BN2, AN3-BN3, AN4-BN4, AN5-BN5, AN6-BN6, AN7-BN7>(T1::in_base_unit(lhs.val)/T2::in_base_unit(rhs.val));
 	}
+
+	template<typename T1, typename T2, int N1, int N2, int N3, int N4, int N5, int N6, int N7>
+	bool operator==(AggregateUnits<T1, N1, N2, N3, N4, N5, N6, N7> lhs, AggregateUnits<T2, N1, N2, N3, N4, N5, N6, N7> rhs){
+		return T1::in_base_unit(lhs.val)==T2::in_base_unit(rhs.val);
+	}
+	
+	template<typename T1, typename T2, int N1, int N2, int N3, int N4, int N5, int N6, int N7>
+	bool operator!=(AggregateUnits<T1, N1, N2, N3, N4, N5, N6, N7> lhs, AggregateUnits<T2, N1, N2, N3, N4, N5, N6, N7> rhs){
+		return T1::in_base_unit(lhs.val)!=T2::in_base_unit(rhs.val);
+	}	
+
 
 	const char* unitnames[7]={"m","g","t","K","A","mol","cd"};
 	

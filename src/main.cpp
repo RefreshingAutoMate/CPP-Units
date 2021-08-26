@@ -32,7 +32,7 @@ int main(){
 	auto a = cppunits::Kilogram(1000_g);
 	auto b=cppunits::CubicMeter(3);
 	std::cout << calculate_density(a,b)<<"\n";
-	//std::cout << cppunits::Kilogram(a)<<"\n";	
+	std::cout << (cppunits::Kilogram(a)==1000_g)<<"\n";	
 	//std::cout << cppunits::Liter(3000)<<"\n";
 		
 	
