@@ -29,7 +29,7 @@ namespace cppunits{
     using Attometer = AggregateUnits<Atto, 1, 0, 0, 0, 0, 0, 0>;
     using Zeptometer = AggregateUnits<Zepto, 1, 0, 0, 0, 0, 0, 0>;
     using Yoctometer = AggregateUnits<Yocto, 1, 0, 0, 0, 0, 0, 0>;
-
+//Ab hier die Einheiten kontrollieren
     using SquareYottameter = AggregateUnits<Yotta, 2, 0, 0, 0, 0, 0, 0>;
     using SquareZettameter = AggregateUnits<Zetta, 2, 0, 0, 0, 0, 0, 0>;
     using SquareExameter = AggregateUnits<Exa, 2, 0, 0, 0, 0, 0, 0>;
@@ -40,7 +40,7 @@ namespace cppunits{
     using SquareKilometer = AggregateUnits<Kilo, 2, 0, 0, 0, 0, 0, 0>;
     using SquareHectometer = AggregateUnits<Hecto, 2, 0, 0, 0, 0, 0, 0>;
     using SquareDecameter = AggregateUnits<Deca, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareMeter = AggregateUnits<Base, 2, 0, 0, 0, 0, 0, 0>;
+    using SquareMeter = AggregateUnits<Base, 2, 0, 0, 0, 0, 0, 0>; //ist OK
     using SquareDecimeter =   AggregateUnits<Deci, 2, 0, 0, 0, 0, 0, 0>;
     using SquareCentimeter = AggregateUnits<Centi, 2, 0, 0, 0, 0, 0, 0>;
     using SquareMillimeter = AggregateUnits<Milli, 2, 0, 0, 0, 0, 0, 0>;
@@ -63,8 +63,8 @@ namespace cppunits{
     using CubicKilometer = AggregateUnits<Kilo, 3, 0, 0, 0, 0, 0, 0>;
     using CubicHectometer = AggregateUnits<Hecto, 3, 0, 0, 0, 0, 0, 0>;
     using CubicDecameter = AggregateUnits<Deca, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicMeter = AggregateUnits<Base, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicDecimeter =   AggregateUnits<Deci, 3, 0, 0, 0, 0, 0, 0>;
+    using CubicMeter = AggregateUnits<Base, 3, 0, 0, 0, 0, 0, 0>; //ist OK
+    using CubicDecimeter =   AggregateUnits<Milli, 3, 0, 0, 0, 0, 0, 0>;
     using CubicCentimeter = AggregateUnits<Centi, 3, 0, 0, 0, 0, 0, 0>;
     using CubicMillimeter = AggregateUnits<Milli, 3, 0, 0, 0, 0, 0, 0>;
     using CubicMicrometer = AggregateUnits<Micro, 3, 0, 0, 0, 0, 0, 0>;
@@ -74,6 +74,8 @@ namespace cppunits{
     using CubicAttometer = AggregateUnits<Atto, 3, 0, 0, 0, 0, 0, 0>;
     using CubicZeptometer = AggregateUnits<Zepto, 3, 0, 0, 0, 0, 0, 0>;
     using CubicYoctometer = AggregateUnits<Yocto, 3, 0, 0, 0, 0, 0, 0>;
+
+//bis hier die Einheiten kontrollieren
 
     // Defining units of mass
 
@@ -227,9 +229,9 @@ namespace cppunits{
     using Yoctocandela = AggregateUnits<Yocto, 0, 0, 0, 0, 0, 0, 1>;
 
     using Number = cppunits::AggregateUnits<cppunits::Base, 0, 0, 0, 0, 0, 0, 0>;
-    using Liter = AggregateUnits<Deci, 3, 0, 0, 0, 0, 0, 0>;
+    using Liter = AggregateUnits<Milli, 3, 0, 0, 0, 0, 0, 0>;
 
-    using Pascal = AggregateUnits<Base, -1, 1, -2, 0, 0, 0, 0>;
+    using Pascal = AggregateUnits<Base, -1, 1, -2, 0, 0, 0, 0>; //TODO: Das "Base"  ändern
 
     // using Inverse = AggregateUnits<Base, , 0, 0, 0, 0, 0, 0>;
 

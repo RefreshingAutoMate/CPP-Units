@@ -1,7 +1,8 @@
 #pragma once
 #include <ostream>
 #include <cmath>
-// Subset of important units: Length (Meter), Mass (Gram (not Kilogram!)), Time (Second), Temperature (Kelvin), Current(Ampere), Substance (Mol)
+#include <string>
+// Subset of important units: Length (Meter), Mass (Gram (not Kilogram!)), Time (Second), Temperature (Kelvin), Current(Ampere), Substance (Mol), Candela
 // see:https://de.wikipedia.org/wiki/Internationales_Einheitensystem#SI-Einheiten
 
 namespace cppunits{
@@ -68,15 +69,6 @@ namespace cppunits{
 		}		
 	};
 	
-
-	
-	//This allows the unit classes to be printed out via std::cout
-	template<typename T, int N1, int N2, int N3, int N4, int N5, int N6, int N7>
-	std::ostream& operator<<(std::ostream& os, AggregateUnits<T, N1, N2, N3, N4, N5, N6, N7> a){
-		os<<T::in_base_unit(a.val);
-		return os;
-	}
-		
 	template<typename T1, typename T2, int N1, int N2, int N3, int N4, int N5, int N6, int N7>
 	AggregateUnits<Base, N1, N2, N3, N4, N5, N6, N7> operator+(AggregateUnits<T1, N1, N2, N3, N4, N5, N6, N7> lhs, AggregateUnits<T2, N1, N2, N3, N4, N5, N6, N7> rhs){
 		return AggregateUnits<Base, N1, N2, N3, N4, N5, N6, N7>(T1::in_base_unit(lhs.val)+T2::in_base_unit(rhs.val));
@@ -99,6 +91,33 @@ namespace cppunits{
 	AggregateUnits<Base, AN1-BN1, AN2-BN2, AN3-BN3, AN4-BN4, AN5-BN5, AN6-BN6, AN7-BN7> operator/(AggregateUnits<T1, AN1, AN2, AN3, AN4, AN5, AN6, AN7> lhs, AggregateUnits<T2, BN1, BN2, BN3, BN4, BN5, BN6, BN7> rhs){
 		return AggregateUnits<Base, AN1-BN1, AN2-BN2, AN3-BN3, AN4-BN4, AN5-BN5, AN6-BN6, AN7-BN7>(T1::in_base_unit(lhs.val)/T2::in_base_unit(rhs.val));
 	}
+
+	const char* unitnames[7]={"m","g","t","K","A","mol","cd"};
+	
+	template<int E, typename ...Args>
+	void stream_units(std::ostream& os,int pos, int N, Args... Ns){
+		if (N!=0){
+			os<<unitnames[pos]<<"^"<<std::to_string(N); //change later to remove string dependency
+		}
+		stream_units<E-1>(os, ++pos,Ns...);
+	}
+	
+	template<>
+	void stream_units<0>(std::ostream& os, int pos, int N){
+		if (N!=0){
+			os<<unitnames[pos]<<"^"<<std::to_string(N);//change later to remove string dependency
+		}
+	}
+
+	//This allows the unit classes to be printed out via std::cout
+	template<typename T, int N1, int N2, int N3, int N4, int N5, int N6, int N7>
+	std::ostream& operator<<(std::ostream& os, AggregateUnits<T, N1, N2, N3, N4, N5, N6, N7> a){
+		//os<<T::in_base_unit(a.val);
+		os<<a.val;
+		stream_units<6>(os,0,N1,N2,N3,N4,N5,N6,N7);
+		return os;
+	}
+	
 
 	
 }
