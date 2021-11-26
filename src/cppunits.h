@@ -8,254 +8,198 @@ namespace cppunits{
 
     // Defining units of length
 
-    using Yottameter = AggregateUnits<Yotta, 1, 0, 0, 0, 0, 0, 0>;
-    using Zettameter = AggregateUnits<Zetta, 1, 0, 0, 0, 0, 0, 0>;
-    using Exameter = AggregateUnits<Exa, 1, 0, 0, 0, 0, 0, 0>;
-    using Petameter = AggregateUnits<Peta, 1, 0, 0, 0, 0, 0, 0>;
-    using Terameter = AggregateUnits<Tera, 1, 0, 0, 0, 0, 0, 0>;
-    using Gigameter = AggregateUnits<Giga, 1, 0, 0, 0, 0, 0, 0>;
-    using Megameter = AggregateUnits<Mega, 1, 0, 0, 0, 0, 0, 0>;
-    using Kilometer = AggregateUnits<Kilo, 1, 0, 0, 0, 0, 0, 0>;
-    using Hectometer = AggregateUnits<Hecto, 1, 0, 0, 0, 0, 0, 0>;
-    using Decameter = AggregateUnits<Deca, 1, 0, 0, 0, 0, 0, 0>;
-    using Meter = AggregateUnits<Base, 1, 0, 0, 0, 0, 0, 0>;
-    using Decimeter =   AggregateUnits<Deci, 1, 0, 0, 0, 0, 0, 0>;
-    using Centimeter = AggregateUnits<Centi, 1, 0, 0, 0, 0, 0, 0>;
-    using Millimeter = AggregateUnits<Milli, 1, 0, 0, 0, 0, 0, 0>;
-    using Micrometer = AggregateUnits<Micro, 1, 0, 0, 0, 0, 0, 0>;
-    using Nanometer = AggregateUnits<Nano, 1, 0, 0, 0, 0, 0, 0>;
-    using Picometer = AggregateUnits<Pico, 1, 0, 0, 0, 0, 0, 0>;
-    using Femtometer = AggregateUnits<Femto, 1, 0, 0, 0, 0, 0, 0>;
-    using Attometer = AggregateUnits<Atto, 1, 0, 0, 0, 0, 0, 0>;
-    using Zeptometer = AggregateUnits<Zepto, 1, 0, 0, 0, 0, 0, 0>;
-    using Yoctometer = AggregateUnits<Yocto, 1, 0, 0, 0, 0, 0, 0>;
-//Ab hier die Einheiten kontrollieren
-    using SquareYottameter = AggregateUnits<Yotta, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareZettameter = AggregateUnits<Zetta, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareExameter = AggregateUnits<Exa, 2, 0, 0, 0, 0, 0, 0>;
-    using SquarePetameter = AggregateUnits<Peta, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareTerameter = AggregateUnits<Tera, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareGigameter = AggregateUnits<Giga, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareMegameter = AggregateUnits<Mega, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareKilometer = AggregateUnits<Kilo, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareHectometer = AggregateUnits<Hecto, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareDecameter = AggregateUnits<Deca, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareMeter = AggregateUnits<Base, 2, 0, 0, 0, 0, 0, 0>; //ist OK
-    using SquareDecimeter =   AggregateUnits<Deci, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareCentimeter = AggregateUnits<Centi, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareMillimeter = AggregateUnits<Milli, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareMicrometer = AggregateUnits<Micro, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareNanometer = AggregateUnits<Nano, 2, 0, 0, 0, 0, 0, 0>;
-    using SquarePicometer = AggregateUnits<Pico, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareFemtometer = AggregateUnits<Femto, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareAttometer = AggregateUnits<Atto, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareZeptometer = AggregateUnits<Zepto, 2, 0, 0, 0, 0, 0, 0>;
-    using SquareYoctometer = AggregateUnits<Yocto, 2, 0, 0, 0, 0, 0, 0>;
+    using Yottameter = AggregateUnit<Yotta, 1, 0, 0, 0, 0, 0, 0>;
+    using Zettameter = AggregateUnit<Zetta, 1, 0, 0, 0, 0, 0, 0>;
+    using Exameter = AggregateUnit<Exa, 1, 0, 0, 0, 0, 0, 0>;
+    using Petameter = AggregateUnit<Peta, 1, 0, 0, 0, 0, 0, 0>;
+    using Terameter = AggregateUnit<Tera, 1, 0, 0, 0, 0, 0, 0>;
+    using Gigameter = AggregateUnit<Giga, 1, 0, 0, 0, 0, 0, 0>;
+    using Megameter = AggregateUnit<Mega, 1, 0, 0, 0, 0, 0, 0>;
+    using Kilometer = AggregateUnit<Kilo, 1, 0, 0, 0, 0, 0, 0>;
+    using Hectometer = AggregateUnit<Hecto, 1, 0, 0, 0, 0, 0, 0>;
+    using Decameter = AggregateUnit<Deca, 1, 0, 0, 0, 0, 0, 0>;
+    using Meter = AggregateUnit<Base, 1, 0, 0, 0, 0, 0, 0>;
+    using Decimeter =   AggregateUnit<Deci, 1, 0, 0, 0, 0, 0, 0>;
+    using Centimeter = AggregateUnit<Centi, 1, 0, 0, 0, 0, 0, 0>;
+    using Millimeter = AggregateUnit<Milli, 1, 0, 0, 0, 0, 0, 0>;
+    using Micrometer = AggregateUnit<Micro, 1, 0, 0, 0, 0, 0, 0>;
+    using Nanometer = AggregateUnit<Nano, 1, 0, 0, 0, 0, 0, 0>;
+    using Picometer = AggregateUnit<Pico, 1, 0, 0, 0, 0, 0, 0>;
+    using Femtometer = AggregateUnit<Femto, 1, 0, 0, 0, 0, 0, 0>;
+    using Attometer = AggregateUnit<Atto, 1, 0, 0, 0, 0, 0, 0>;
+    using Zeptometer = AggregateUnit<Zepto, 1, 0, 0, 0, 0, 0, 0>;
+    using Yoctometer = AggregateUnit<Yocto, 1, 0, 0, 0, 0, 0, 0>;
 
-
-    using CubicYottameter = AggregateUnits<Yotta, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicZettameter = AggregateUnits<Zetta, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicExameter = AggregateUnits<Exa, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicPetameter = AggregateUnits<Peta, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicTerameter = AggregateUnits<Tera, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicGigameter = AggregateUnits<Giga, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicMegameter = AggregateUnits<Mega, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicKilometer = AggregateUnits<Kilo, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicHectometer = AggregateUnits<Hecto, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicDecameter = AggregateUnits<Deca, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicMeter = AggregateUnits<Base, 3, 0, 0, 0, 0, 0, 0>; //ist OK
-    using CubicDecimeter =   AggregateUnits<Milli, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicCentimeter = AggregateUnits<Centi, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicMillimeter = AggregateUnits<Milli, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicMicrometer = AggregateUnits<Micro, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicNanometer = AggregateUnits<Nano, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicPicometer = AggregateUnits<Pico, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicFemtometer = AggregateUnits<Femto, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicAttometer = AggregateUnits<Atto, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicZeptometer = AggregateUnits<Zepto, 3, 0, 0, 0, 0, 0, 0>;
-    using CubicYoctometer = AggregateUnits<Yocto, 3, 0, 0, 0, 0, 0, 0>;
-
-//bis hier die Einheiten kontrollieren
 
     // Defining units of mass
 
-    using Yottagram = AggregateUnits<Yotta, 0, 1, 0, 0, 0, 0, 0>;
-    using Zettagram = AggregateUnits<Zetta, 0, 1, 0, 0, 0, 0, 0>;
-    using Exagram = AggregateUnits<Exa, 0, 1, 0, 0, 0, 0, 0>;
-    using Petagram = AggregateUnits<Peta, 0, 1, 0, 0, 0, 0, 0>;
-    using Teragram = AggregateUnits<Tera, 0, 1, 0, 0, 0, 0, 0>;
-    using Gigagram = AggregateUnits<Giga, 0, 1, 0, 0, 0, 0, 0>;
-    using Megagram = AggregateUnits<Mega, 0, 1, 0, 0, 0, 0, 0>;
-    using Kilogram = AggregateUnits<Kilo, 0, 1, 0, 0, 0, 0, 0>;
-    using Hectogram = AggregateUnits<Hecto, 0, 1, 0, 0, 0, 0, 0>;
-    using Decagram = AggregateUnits<Deca, 0, 1, 0, 0, 0, 0, 0>;
-    using Gram = AggregateUnits<Base, 0, 1, 0, 0, 0, 0, 0>;
-    using Decigram =   AggregateUnits<Deci, 0, 1, 0, 0, 0, 0, 0>;
-    using Centigram = AggregateUnits<Centi, 0, 1, 0, 0, 0, 0, 0>;
-    using Milligram = AggregateUnits<Milli, 0, 1, 0, 0, 0, 0, 0>;
-    using Microgram = AggregateUnits<Micro, 0, 1, 0, 0, 0, 0, 0>;
-    using Nanogram = AggregateUnits<Nano, 0, 1, 0, 0, 0, 0, 0>;
-    using Picogram = AggregateUnits<Pico, 0, 1, 0, 0, 0, 0, 0>;
-    using Femtogram = AggregateUnits<Femto, 0, 1, 0, 0, 0, 0, 0>;
-    using Attogram = AggregateUnits<Atto, 0, 1, 0, 0, 0, 0, 0>;
-    using Zeptogram = AggregateUnits<Zepto, 0, 1, 0, 0, 0, 0, 0>;
-    using Yoctogram = AggregateUnits<Yocto, 0, 1, 0, 0, 0, 0, 0>;
+    using Yottagram = AggregateUnit<Yotta, 0, 1, 0, 0, 0, 0, 0>;
+    using Zettagram = AggregateUnit<Zetta, 0, 1, 0, 0, 0, 0, 0>;
+    using Exagram = AggregateUnit<Exa, 0, 1, 0, 0, 0, 0, 0>;
+    using Petagram = AggregateUnit<Peta, 0, 1, 0, 0, 0, 0, 0>;
+    using Teragram = AggregateUnit<Tera, 0, 1, 0, 0, 0, 0, 0>;
+    using Gigagram = AggregateUnit<Giga, 0, 1, 0, 0, 0, 0, 0>;
+    using Megagram = AggregateUnit<Mega, 0, 1, 0, 0, 0, 0, 0>;
+    using Kilogram = AggregateUnit<Kilo, 0, 1, 0, 0, 0, 0, 0>;
+    using Hectogram = AggregateUnit<Hecto, 0, 1, 0, 0, 0, 0, 0>;
+    using Decagram = AggregateUnit<Deca, 0, 1, 0, 0, 0, 0, 0>;
+    using Gram = AggregateUnit<Base, 0, 1, 0, 0, 0, 0, 0>;
+    using Decigram =   AggregateUnit<Deci, 0, 1, 0, 0, 0, 0, 0>;
+    using Centigram = AggregateUnit<Centi, 0, 1, 0, 0, 0, 0, 0>;
+    using Milligram = AggregateUnit<Milli, 0, 1, 0, 0, 0, 0, 0>;
+    using Microgram = AggregateUnit<Micro, 0, 1, 0, 0, 0, 0, 0>;
+    using Nanogram = AggregateUnit<Nano, 0, 1, 0, 0, 0, 0, 0>;
+    using Picogram = AggregateUnit<Pico, 0, 1, 0, 0, 0, 0, 0>;
+    using Femtogram = AggregateUnit<Femto, 0, 1, 0, 0, 0, 0, 0>;
+    using Attogram = AggregateUnit<Atto, 0, 1, 0, 0, 0, 0, 0>;
+    using Zeptogram = AggregateUnit<Zepto, 0, 1, 0, 0, 0, 0, 0>;
+    using Yoctogram = AggregateUnit<Yocto, 0, 1, 0, 0, 0, 0, 0>;
 
 
     // Defining units of time
 
-    using Yottasecond = AggregateUnits<Yotta, 0, 0, 1, 0, 0, 0, 0>;
-    using Zettasecond = AggregateUnits<Zetta, 0, 0, 1, 0, 0, 0, 0>;
-    using Exasecond = AggregateUnits<Exa, 0, 0, 1, 0, 0, 0, 0>;
-    using Petasecond = AggregateUnits<Peta, 0, 0, 1, 0, 0, 0, 0>;
-    using Terasecond = AggregateUnits<Tera, 0, 0, 1, 0, 0, 0, 0>;
-    using Gigasecond = AggregateUnits<Giga, 0, 0, 1, 0, 0, 0, 0>;
-    using Megasecond = AggregateUnits<Mega, 0, 0, 1, 0, 0, 0, 0>;
-    using Kilosecond = AggregateUnits<Kilo, 0, 0, 1, 0, 0, 0, 0>;
-    using Hectosecond = AggregateUnits<Hecto, 0, 0, 1, 0, 0, 0, 0>;
-    using Decasecond = AggregateUnits<Deca, 0, 0, 1, 0, 0, 0, 0>;
-    using Second = AggregateUnits<Base, 0, 0, 1, 0, 0, 0, 0>;
-    using Decisecond =   AggregateUnits<Deci, 0, 0, 1, 0, 0, 0, 0>;
-    using Centisecond = AggregateUnits<Centi, 0, 0, 1, 0, 0, 0, 0>;
-    using Millisecond = AggregateUnits<Milli, 0, 0, 1, 0, 0, 0, 0>;
-    using Microsecond = AggregateUnits<Micro, 0, 0, 1, 0, 0, 0, 0>;
-    using Nanosecond = AggregateUnits<Nano, 0, 0, 1, 0, 0, 0, 0>;
-    using Picosecond = AggregateUnits<Pico, 0, 0, 1, 0, 0, 0, 0>;
-    using Femtosecond = AggregateUnits<Femto, 0, 0, 1, 0, 0, 0, 0>;
-    using Attosecond = AggregateUnits<Atto, 0, 0, 1, 0, 0, 0, 0>;
-    using Zeptosecond = AggregateUnits<Zepto, 0, 0, 1, 0, 0, 0, 0>;
-    using Yoctosecond = AggregateUnits<Yocto, 0, 0, 1, 0, 0, 0, 0>;
+    using Yottasecond = AggregateUnit<Yotta, 0, 0, 1, 0, 0, 0, 0>;
+    using Zettasecond = AggregateUnit<Zetta, 0, 0, 1, 0, 0, 0, 0>;
+    using Exasecond = AggregateUnit<Exa, 0, 0, 1, 0, 0, 0, 0>;
+    using Petasecond = AggregateUnit<Peta, 0, 0, 1, 0, 0, 0, 0>;
+    using Terasecond = AggregateUnit<Tera, 0, 0, 1, 0, 0, 0, 0>;
+    using Gigasecond = AggregateUnit<Giga, 0, 0, 1, 0, 0, 0, 0>;
+    using Megasecond = AggregateUnit<Mega, 0, 0, 1, 0, 0, 0, 0>;
+    using Kilosecond = AggregateUnit<Kilo, 0, 0, 1, 0, 0, 0, 0>;
+    using Hectosecond = AggregateUnit<Hecto, 0, 0, 1, 0, 0, 0, 0>;
+    using Decasecond = AggregateUnit<Deca, 0, 0, 1, 0, 0, 0, 0>;
+    using Second = AggregateUnit<Base, 0, 0, 1, 0, 0, 0, 0>;
+    using Decisecond =   AggregateUnit<Deci, 0, 0, 1, 0, 0, 0, 0>;
+    using Centisecond = AggregateUnit<Centi, 0, 0, 1, 0, 0, 0, 0>;
+    using Millisecond = AggregateUnit<Milli, 0, 0, 1, 0, 0, 0, 0>;
+    using Microsecond = AggregateUnit<Micro, 0, 0, 1, 0, 0, 0, 0>;
+    using Nanosecond = AggregateUnit<Nano, 0, 0, 1, 0, 0, 0, 0>;
+    using Picosecond = AggregateUnit<Pico, 0, 0, 1, 0, 0, 0, 0>;
+    using Femtosecond = AggregateUnit<Femto, 0, 0, 1, 0, 0, 0, 0>;
+    using Attosecond = AggregateUnit<Atto, 0, 0, 1, 0, 0, 0, 0>;
+    using Zeptosecond = AggregateUnit<Zepto, 0, 0, 1, 0, 0, 0, 0>;
+    using Yoctosecond = AggregateUnit<Yocto, 0, 0, 1, 0, 0, 0, 0>;
 
 
     // Defining units of temperature
 
-    using Yottakelvin = AggregateUnits<Yotta, 0, 0, 0, 1, 0, 0, 0>;
-    using Zettakelvin = AggregateUnits<Zetta, 0, 0, 0, 1, 0, 0, 0>;
-    using Exakelvin = AggregateUnits<Exa, 0, 0, 0, 1, 0, 0, 0>;
-    using Petakelvin = AggregateUnits<Peta, 0, 0, 0, 1, 0, 0, 0>;
-    using Terakelvin = AggregateUnits<Tera, 0, 0, 0, 1, 0, 0, 0>;
-    using Gigakelvin = AggregateUnits<Giga, 0, 0, 0, 1, 0, 0, 0>;
-    using Megakelvin = AggregateUnits<Mega, 0, 0, 0, 1, 0, 0, 0>;
-    using Kilokelvin = AggregateUnits<Kilo, 0, 0, 0, 1, 0, 0, 0>;
-    using Hectokelvin = AggregateUnits<Hecto, 0, 0, 0, 1, 0, 0, 0>;
-    using Decakelvin = AggregateUnits<Deca, 0, 0, 0, 1, 0, 0, 0>;
-    using Kelvin = AggregateUnits<Base, 0, 0, 0, 1, 0, 0, 0>;
-    using Decikelvin =   AggregateUnits<Deci, 0, 0, 0, 1, 0, 0, 0>;
-    using Centikelvin = AggregateUnits<Centi, 0, 0, 0, 1, 0, 0, 0>;
-    using Millikelvin = AggregateUnits<Milli, 0, 0, 0, 1, 0, 0, 0>;
-    using Microkelvin = AggregateUnits<Micro, 0, 0, 0, 1, 0, 0, 0>;
-    using Nanokelvin = AggregateUnits<Nano, 0, 0, 0, 1, 0, 0, 0>;
-    using Picokelvin = AggregateUnits<Pico, 0, 0, 0, 1, 0, 0, 0>;
-    using Femtokelvin = AggregateUnits<Femto, 0, 0, 0, 1, 0, 0, 0>;
-    using Attokelvin = AggregateUnits<Atto, 0, 0, 0, 1, 0, 0, 0>;
-    using Zeptokelvin = AggregateUnits<Zepto, 0, 0, 0, 1, 0, 0, 0>;
-    using Yoctokelvin = AggregateUnits<Yocto, 0, 0, 0, 1, 0, 0, 0>;
+    using Yottakelvin = AggregateUnit<Yotta, 0, 0, 0, 1, 0, 0, 0>;
+    using Zettakelvin = AggregateUnit<Zetta, 0, 0, 0, 1, 0, 0, 0>;
+    using Exakelvin = AggregateUnit<Exa, 0, 0, 0, 1, 0, 0, 0>;
+    using Petakelvin = AggregateUnit<Peta, 0, 0, 0, 1, 0, 0, 0>;
+    using Terakelvin = AggregateUnit<Tera, 0, 0, 0, 1, 0, 0, 0>;
+    using Gigakelvin = AggregateUnit<Giga, 0, 0, 0, 1, 0, 0, 0>;
+    using Megakelvin = AggregateUnit<Mega, 0, 0, 0, 1, 0, 0, 0>;
+    using Kilokelvin = AggregateUnit<Kilo, 0, 0, 0, 1, 0, 0, 0>;
+    using Hectokelvin = AggregateUnit<Hecto, 0, 0, 0, 1, 0, 0, 0>;
+    using Decakelvin = AggregateUnit<Deca, 0, 0, 0, 1, 0, 0, 0>;
+    using Kelvin = AggregateUnit<Base, 0, 0, 0, 1, 0, 0, 0>;
+    using Decikelvin =   AggregateUnit<Deci, 0, 0, 0, 1, 0, 0, 0>;
+    using Centikelvin = AggregateUnit<Centi, 0, 0, 0, 1, 0, 0, 0>;
+    using Millikelvin = AggregateUnit<Milli, 0, 0, 0, 1, 0, 0, 0>;
+    using Microkelvin = AggregateUnit<Micro, 0, 0, 0, 1, 0, 0, 0>;
+    using Nanokelvin = AggregateUnit<Nano, 0, 0, 0, 1, 0, 0, 0>;
+    using Picokelvin = AggregateUnit<Pico, 0, 0, 0, 1, 0, 0, 0>;
+    using Femtokelvin = AggregateUnit<Femto, 0, 0, 0, 1, 0, 0, 0>;
+    using Attokelvin = AggregateUnit<Atto, 0, 0, 0, 1, 0, 0, 0>;
+    using Zeptokelvin = AggregateUnit<Zepto, 0, 0, 0, 1, 0, 0, 0>;
+    using Yoctokelvin = AggregateUnit<Yocto, 0, 0, 0, 1, 0, 0, 0>;
 
 
     // Defining units of current
 
-    using Yottaampere = AggregateUnits<Yotta, 0, 0, 0, 0, 1, 0, 0>;
-    using Zettaampere = AggregateUnits<Zetta, 0, 0, 0, 0, 1, 0, 0>;
-    using Exaampere = AggregateUnits<Exa, 0, 0, 0, 0, 1, 0, 0>;
-    using Petaampere = AggregateUnits<Peta, 0, 0, 0, 0, 1, 0, 0>;
-    using Teraampere = AggregateUnits<Tera, 0, 0, 0, 0, 1, 0, 0>;
-    using Gigaampere = AggregateUnits<Giga, 0, 0, 0, 0, 1, 0, 0>;
-    using Megaampere = AggregateUnits<Mega, 0, 0, 0, 0, 1, 0, 0>;
-    using Kiloampere = AggregateUnits<Kilo, 0, 0, 0, 0, 1, 0, 0>;
-    using Hectoampere = AggregateUnits<Hecto, 0, 0, 0, 0, 1, 0, 0>;
-    using Decaampere = AggregateUnits<Deca, 0, 0, 0, 0, 1, 0, 0>;
-    using Ampere = AggregateUnits<Base, 0, 0, 0, 0, 1, 0, 0>;
-    using Deciampere =   AggregateUnits<Deci, 0, 0, 0, 0, 1, 0, 0>;
-    using Centiampere = AggregateUnits<Centi, 0, 0, 0, 0, 1, 0, 0>;
-    using Milliampere = AggregateUnits<Milli, 0, 0, 0, 0, 1, 0, 0>;
-    using Microampere = AggregateUnits<Micro, 0, 0, 0, 0, 1, 0, 0>;
-    using Nanoampere = AggregateUnits<Nano, 0, 0, 0, 0, 1, 0, 0>;
-    using Picoampere = AggregateUnits<Pico, 0, 0, 0, 0, 1, 0, 0>;
-    using Femtoampere = AggregateUnits<Femto, 0, 0, 0, 0, 1, 0, 0>;
-    using Attoampere = AggregateUnits<Atto, 0, 0, 0, 0, 1, 0, 0>;
-    using Zeptoampere = AggregateUnits<Zepto, 0, 0, 0, 0, 1, 0, 0>;
-    using Yoctoampere = AggregateUnits<Yocto, 0, 0, 0, 0, 1, 0, 0>;
+    using Yottaampere = AggregateUnit<Yotta, 0, 0, 0, 0, 1, 0, 0>;
+    using Zettaampere = AggregateUnit<Zetta, 0, 0, 0, 0, 1, 0, 0>;
+    using Exaampere = AggregateUnit<Exa, 0, 0, 0, 0, 1, 0, 0>;
+    using Petaampere = AggregateUnit<Peta, 0, 0, 0, 0, 1, 0, 0>;
+    using Teraampere = AggregateUnit<Tera, 0, 0, 0, 0, 1, 0, 0>;
+    using Gigaampere = AggregateUnit<Giga, 0, 0, 0, 0, 1, 0, 0>;
+    using Megaampere = AggregateUnit<Mega, 0, 0, 0, 0, 1, 0, 0>;
+    using Kiloampere = AggregateUnit<Kilo, 0, 0, 0, 0, 1, 0, 0>;
+    using Hectoampere = AggregateUnit<Hecto, 0, 0, 0, 0, 1, 0, 0>;
+    using Decaampere = AggregateUnit<Deca, 0, 0, 0, 0, 1, 0, 0>;
+    using Ampere = AggregateUnit<Base, 0, 0, 0, 0, 1, 0, 0>;
+    using Deciampere =   AggregateUnit<Deci, 0, 0, 0, 0, 1, 0, 0>;
+    using Centiampere = AggregateUnit<Centi, 0, 0, 0, 0, 1, 0, 0>;
+    using Milliampere = AggregateUnit<Milli, 0, 0, 0, 0, 1, 0, 0>;
+    using Microampere = AggregateUnit<Micro, 0, 0, 0, 0, 1, 0, 0>;
+    using Nanoampere = AggregateUnit<Nano, 0, 0, 0, 0, 1, 0, 0>;
+    using Picoampere = AggregateUnit<Pico, 0, 0, 0, 0, 1, 0, 0>;
+    using Femtoampere = AggregateUnit<Femto, 0, 0, 0, 0, 1, 0, 0>;
+    using Attoampere = AggregateUnit<Atto, 0, 0, 0, 0, 1, 0, 0>;
+    using Zeptoampere = AggregateUnit<Zepto, 0, 0, 0, 0, 1, 0, 0>;
+    using Yoctoampere = AggregateUnit<Yocto, 0, 0, 0, 0, 1, 0, 0>;
 
 
 
     // Defining units of substance
 
-    using Yottamol = AggregateUnits<Yotta, 0, 0, 0, 0, 0, 1, 0>;
-    using Zettamol = AggregateUnits<Zetta, 0, 0, 0, 0, 0, 1, 0>;
-    using Examol = AggregateUnits<Exa, 0, 0, 0, 0, 0, 1, 0>;
-    using Petamol = AggregateUnits<Peta, 0, 0, 0, 0, 0, 1, 0>;
-    using Teramol = AggregateUnits<Tera, 0, 0, 0, 0, 0, 1, 0>;
-    using Gigamol = AggregateUnits<Giga, 0, 0, 0, 0, 0, 1, 0>;
-    using Megamol = AggregateUnits<Mega, 0, 0, 0, 0, 0, 1, 0>;
-    using Kilomol = AggregateUnits<Kilo, 0, 0, 0, 0, 0, 1, 0>;
-    using Hectomol = AggregateUnits<Hecto, 0, 0, 0, 0, 0, 1, 0>;
-    using Decamol = AggregateUnits<Deca, 0, 0, 0, 0, 0, 1, 0>;
-    using Mol = AggregateUnits<Base, 0, 0, 0, 0, 0, 1, 0>;
-    using Decimol =   AggregateUnits<Deci, 0, 0, 0, 0, 0, 1, 0>;
-    using Centimol = AggregateUnits<Centi, 0, 0, 0, 0, 0, 1, 0>;
-    using Millimol = AggregateUnits<Milli, 0, 0, 0, 0, 0, 1, 0>;
-    using Micromol = AggregateUnits<Micro, 0, 0, 0, 0, 0, 1, 0>;
-    using Nanomol = AggregateUnits<Nano, 0, 0, 0, 0, 0, 1, 0>;
-    using Picomol = AggregateUnits<Pico, 0, 0, 0, 0, 0, 1, 0>;
-    using Femtomol = AggregateUnits<Femto, 0, 0, 0, 0, 0, 1, 0>;
-    using Attomol = AggregateUnits<Atto, 0, 0, 0, 0, 0, 1, 0>;
-    using Zeptomol = AggregateUnits<Zepto, 0, 0, 0, 0, 0, 1, 0>;
-    using Yoctomol = AggregateUnits<Yocto, 0, 0, 0, 0, 0, 1, 0>;
+    using Yottamol = AggregateUnit<Yotta, 0, 0, 0, 0, 0, 1, 0>;
+    using Zettamol = AggregateUnit<Zetta, 0, 0, 0, 0, 0, 1, 0>;
+    using Examol = AggregateUnit<Exa, 0, 0, 0, 0, 0, 1, 0>;
+    using Petamol = AggregateUnit<Peta, 0, 0, 0, 0, 0, 1, 0>;
+    using Teramol = AggregateUnit<Tera, 0, 0, 0, 0, 0, 1, 0>;
+    using Gigamol = AggregateUnit<Giga, 0, 0, 0, 0, 0, 1, 0>;
+    using Megamol = AggregateUnit<Mega, 0, 0, 0, 0, 0, 1, 0>;
+    using Kilomol = AggregateUnit<Kilo, 0, 0, 0, 0, 0, 1, 0>;
+    using Hectomol = AggregateUnit<Hecto, 0, 0, 0, 0, 0, 1, 0>;
+    using Decamol = AggregateUnit<Deca, 0, 0, 0, 0, 0, 1, 0>;
+    using Mol = AggregateUnit<Base, 0, 0, 0, 0, 0, 1, 0>;
+    using Decimol =   AggregateUnit<Deci, 0, 0, 0, 0, 0, 1, 0>;
+    using Centimol = AggregateUnit<Centi, 0, 0, 0, 0, 0, 1, 0>;
+    using Millimol = AggregateUnit<Milli, 0, 0, 0, 0, 0, 1, 0>;
+    using Micromol = AggregateUnit<Micro, 0, 0, 0, 0, 0, 1, 0>;
+    using Nanomol = AggregateUnit<Nano, 0, 0, 0, 0, 0, 1, 0>;
+    using Picomol = AggregateUnit<Pico, 0, 0, 0, 0, 0, 1, 0>;
+    using Femtomol = AggregateUnit<Femto, 0, 0, 0, 0, 0, 1, 0>;
+    using Attomol = AggregateUnit<Atto, 0, 0, 0, 0, 0, 1, 0>;
+    using Zeptomol = AggregateUnit<Zepto, 0, 0, 0, 0, 0, 1, 0>;
+    using Yoctomol = AggregateUnit<Yocto, 0, 0, 0, 0, 0, 1, 0>;
 
 
 
        // Defining units of luminous intensity
 
-    using Yottacandela = AggregateUnits<Yotta, 0, 0, 0, 0, 0, 0, 1>;
-    using Zettacandela = AggregateUnits<Zetta, 0, 0, 0, 0, 0, 0, 1>;
-    using Exacandela = AggregateUnits<Exa, 0, 0, 0, 0, 0, 0, 1>;
-    using Petacandela = AggregateUnits<Peta, 0, 0, 0, 0, 0, 0, 1>;
-    using Teracandela = AggregateUnits<Tera, 0, 0, 0, 0, 0, 0, 1>;
-    using Gigacandela = AggregateUnits<Giga, 0, 0, 0, 0, 0, 0, 1>;
-    using Megacandela = AggregateUnits<Mega, 0, 0, 0, 0, 0, 0, 1>;
-    using Kilocandela = AggregateUnits<Kilo, 0, 0, 0, 0, 0, 0, 1>;
-    using Hectocandela = AggregateUnits<Hecto, 0, 0, 0, 0, 0, 0, 1>;
-    using Decacandela = AggregateUnits<Deca, 0, 0, 0, 0, 0, 0, 1>;
-    using Candela = AggregateUnits<Base, 0, 0, 0, 0, 0, 0, 1>;
-    using Decicandela =   AggregateUnits<Deci, 0, 0, 0, 0, 0, 0, 1>;
-    using Centicandela = AggregateUnits<Centi, 0, 0, 0, 0, 0, 0, 1>;
-    using Millicandela = AggregateUnits<Milli, 0, 0, 0, 0, 0, 0, 1>;
-    using Microcandela = AggregateUnits<Micro, 0, 0, 0, 0, 0, 0, 1>;
-    using Nanocandela = AggregateUnits<Nano, 0, 0, 0, 0, 0, 0, 1>;
-    using Picocandela = AggregateUnits<Pico, 0, 0, 0, 0, 0, 0, 1>;
-    using Femtocandela = AggregateUnits<Femto, 0, 0, 0, 0, 0, 0, 1>;
-    using Attocandela = AggregateUnits<Atto, 0, 0, 0, 0, 0, 0, 1>;
-    using Zeptocandela = AggregateUnits<Zepto, 0, 0, 0, 0, 0, 0, 1>;
-    using Yoctocandela = AggregateUnits<Yocto, 0, 0, 0, 0, 0, 0, 1>;
+    using Yottacandela = AggregateUnit<Yotta, 0, 0, 0, 0, 0, 0, 1>;
+    using Zettacandela = AggregateUnit<Zetta, 0, 0, 0, 0, 0, 0, 1>;
+    using Exacandela = AggregateUnit<Exa, 0, 0, 0, 0, 0, 0, 1>;
+    using Petacandela = AggregateUnit<Peta, 0, 0, 0, 0, 0, 0, 1>;
+    using Teracandela = AggregateUnit<Tera, 0, 0, 0, 0, 0, 0, 1>;
+    using Gigacandela = AggregateUnit<Giga, 0, 0, 0, 0, 0, 0, 1>;
+    using Megacandela = AggregateUnit<Mega, 0, 0, 0, 0, 0, 0, 1>;
+    using Kilocandela = AggregateUnit<Kilo, 0, 0, 0, 0, 0, 0, 1>;
+    using Hectocandela = AggregateUnit<Hecto, 0, 0, 0, 0, 0, 0, 1>;
+    using Decacandela = AggregateUnit<Deca, 0, 0, 0, 0, 0, 0, 1>;
+    using Candela = AggregateUnit<Base, 0, 0, 0, 0, 0, 0, 1>;
+    using Decicandela =   AggregateUnit<Deci, 0, 0, 0, 0, 0, 0, 1>;
+    using Centicandela = AggregateUnit<Centi, 0, 0, 0, 0, 0, 0, 1>;
+    using Millicandela = AggregateUnit<Milli, 0, 0, 0, 0, 0, 0, 1>;
+    using Microcandela = AggregateUnit<Micro, 0, 0, 0, 0, 0, 0, 1>;
+    using Nanocandela = AggregateUnit<Nano, 0, 0, 0, 0, 0, 0, 1>;
+    using Picocandela = AggregateUnit<Pico, 0, 0, 0, 0, 0, 0, 1>;
+    using Femtocandela = AggregateUnit<Femto, 0, 0, 0, 0, 0, 0, 1>;
+    using Attocandela = AggregateUnit<Atto, 0, 0, 0, 0, 0, 0, 1>;
+    using Zeptocandela = AggregateUnit<Zepto, 0, 0, 0, 0, 0, 0, 1>;
+    using Yoctocandela = AggregateUnit<Yocto, 0, 0, 0, 0, 0, 0, 1>;
 
-    using Number = cppunits::AggregateUnits<cppunits::Base, 0, 0, 0, 0, 0, 0, 0>;
-    using Liter = AggregateUnits<Milli, 3, 0, 0, 0, 0, 0, 0>;
 
-    using Pascal = AggregateUnits<Base, -1, 1, -2, 0, 0, 0, 0>; //TODO: Das "Base"  ändern
 
-    // using Inverse = AggregateUnits<Base, , 0, 0, 0, 0, 0, 0>;
+    // Example definitions for custom units
 
-    template<typename T>
-    constexpr T Inv(T u)
-    {
-        
+    using SquareKilometer = AggregateUnit<UnitPrefix<6>, 2, 0, 0, 0, 0, 0, 0>;
+    using SquareMeter = AggregateUnit<Base, 2, 0, 0, 0, 0, 0, 0>;
+    using SquareDecimeter =   AggregateUnit<UnitPrefix<2>, 2, 0, 0, 0, 0, 0, 0>;
+    using SquareCentimeter = AggregateUnit<UnitPrefix<4>, 2, 0, 0, 0, 0, 0, 0>;
+    using SquareMillimeter = AggregateUnit<UnitPrefix<6>, 2, 0, 0, 0, 0, 0, 0>;
+    using SquareMicrometer = AggregateUnit<UnitPrefix<12>, 2, 0, 0, 0, 0, 0, 0>;
+    using SquareNanometer = AggregateUnit<UnitPrefix<18>, 2, 0, 0, 0, 0, 0, 0>;
 
-        return u;
-    }
+    using CubicMeter =   AggregateUnit<Base, 3, 0, 0, 0, 0, 0, 0>;
 
-    // template<typename T>
-    // constexpr cppunits::Pascal Pa(T n)
-    // {
-    //     auto kg = Kilogram(n);
-    //     auto m = Meter(1);
-    //     auto s = Second(1);
-    //     auto s² = s * s;
-    //     auto ms² = m * s²;
-    //     auto P = kg / ms²;
-    //     return P;
-    // }
+    using Liter = AggregateUnit<UnitPrefix<-3>, 3, 0, 0, 0, 0, 0, 0>;
+    using Pascal = AggregateUnit<UnitPrefix<3>, -1, 1, -2, 0, 0, 0, 0>;
 
-}
+
 
     // Definition of literals for times
 
@@ -1891,6 +1835,20 @@ namespace cppunits{
             }
 
 
+
+    // Example definitions of custom literals 
+
+    cppunits::SquareKilometer operator"" _km²(long double a)
+            {
+                return cppunits::SquareKilometer(a);
+            }
+            
+    cppunits::SquareKilometer operator"" _km²(unsigned long long int a)
+            {
+                return cppunits::SquareKilometer(a);
+            }
+
+
     cppunits::SquareMeter operator"" _m²(long double a)
             {
                 return cppunits::SquareMeter(a);
@@ -1902,23 +1860,95 @@ namespace cppunits{
             }
 
 
+    cppunits::SquareDecimeter operator"" _dm²(long double a)
+            {
+                return cppunits::SquareDecimeter(a);
+            }
+
+
+    cppunits::SquareDecimeter operator"" _dm²(unsigned long long int a)
+            {
+                return cppunits::SquareDecimeter(a);
+            }
+
+
+    cppunits::SquareCentimeter operator"" _cm²(long double a)
+            {
+                return cppunits::SquareCentimeter(a);
+            }
+            
+    cppunits::SquareCentimeter operator"" _cm²(unsigned long long int a)
+            {
+                return cppunits::SquareCentimeter(a);
+            }
+
+
+    cppunits::SquareMillimeter operator"" _mm²(long double a)
+            {
+                return cppunits::SquareMillimeter(a);
+            }
+            
+    cppunits::SquareMillimeter operator"" _mm²(unsigned long long int a)
+            {
+                return cppunits::SquareMillimeter(a);
+            }
+
+
+    cppunits::SquareMicrometer operator"" _µm²(long double a)
+            {
+                return cppunits::SquareMicrometer(a);
+            }
+            
+    cppunits::SquareMicrometer operator"" _µm²(unsigned long long int a)
+            {
+                return cppunits::SquareMicrometer(a);
+            }
+
+
+    cppunits::SquareNanometer operator"" _nm²(long double a)
+            {
+                return cppunits::SquareNanometer(a);
+            }
+            
+    cppunits::SquareNanometer operator"" _nm²(unsigned long long int a)
+            {
+                return cppunits::SquareNanometer(a);
+            }
+
+
+    cppunits::CubicMeter operator"" _m³(long double a)
+            {
+                return cppunits::CubicMeter(a);
+            }
+            
+    cppunits::CubicMeter operator"" _m³(unsigned long long int a)
+            {
+                return cppunits::CubicMeter(a);
+            }
+
+
     cppunits::Pascal operator"" _Pa(long double a)
             {
-                // auto x = cppunits::SquareMeter(a)/cppunits::Meter(a);
-                // return x;
                 return cppunits::Pascal(a);
-
             }
 
     cppunits::Pascal operator"" _Pa(unsigned long long int a)
             {
-                // auto x = cppunits::SquareMeter(a)/cppunits::Meter(a);
-                // return x;
                 return cppunits::Pascal(a);
+            }
+
+
+    cppunits::Liter operator"" _L(long double a)
+            {
+                return cppunits::Liter(a);
+            }
+
+    cppunits::Liter operator"" _L(unsigned long long int a)
+            {
+                return cppunits::Liter(a);
             }
 
 
 
 
-
-
+}
